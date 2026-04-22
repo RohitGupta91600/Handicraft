@@ -132,27 +132,27 @@ export default function Home() {
           {[
             {
               title: "Metal Artifacts",
-              img: "/images/metal.jpg",
+              img: "/images/metal1.jpg",
             },
             {
               title: "Wooden Handicrafts",
-              img: "/images/wood.jpeg",
+              img: "/images/wood1.jpg",
             },
             {
               title: "Luxury Home Decor",
-              img: "/images/decor.jpg",
+              img: "/images/luxury1.jpg",
             },
             {
               title: "Corporate Gift Items",
-              img: "/images/gift.jpg",
+              img: "/images/gift1.jpg",
             },
             {
               title: "Wall Decor Collection",
-              img: "/images/wall.jpg",
+              img: "/images/wall1.jpg",
             },
             {
               title: "Traditional Handcrafts",
-              img: "/images/traditional.jpg",
+              img: "/images/traditional1.jpg",
             },
           ].map((item, i) => (
             <div key={i} className="group cursor-pointer">
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <img
-              src="/images/crafting.jpeg"
+              src="/images/creativity.jpg"
               alt="Crafting"
               className="w-full h-[400px]  shadow-2xl"
             />
