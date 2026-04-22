@@ -63,7 +63,7 @@ export default function RootLayout({
               image: "https://yourdomain.com/logo.png",
               "@id": "https://yourdomain.com",
               url: "https://yourdomain.com",
-              telephone: "7033826056",
+              telephone: "7258895429",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Karol Bagh",

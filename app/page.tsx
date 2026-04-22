@@ -54,10 +54,10 @@ export default function Home() {
 
         <div className="flex items-center gap-6">
           <a
-            href="tel:7033826056"
+            href="tel:7258895429"
             className="hidden md:block text-sm font-sans font-bold border-b-2 border-amber-800"
           >
-            +91 70338 26056
+            +91 72588 95429
           </a>
           <button
             onClick={() =>
@@ -102,7 +102,7 @@ export default function Home() {
               ENQUIRE FOR BULK
             </a>
             <a
-              href="https://wa.me/917033826056"
+              href="https://wa.me/917258895429"
               className="bg-white border border-stone-300 text-stone-900 px-10 py-5 font-sans font-bold tracking-widest hover:bg-stone-50 transition"
             >
               WHATSAPP CATALOGUE
@@ -172,7 +172,7 @@ export default function Home() {
                   </h3>
 
                   <a
-                    href="https://wa.me/917033826056?text=Hi%20I%20am%20interested%20in%20your%20products"
+                    href="https://wa.me/917258895429?text=Hi%20I%20am%20interested%20in%20your%20products"
                     className="text-amber-300 text-xs uppercase tracking-widest mt-2 inline-block"
                   >
                     Enquire Now →
@@ -230,6 +230,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* --- ETHICAL CRAFT --- */}
+<section className="py-32 bg-white">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <div className="mb-12 inline-block">
+      <div className="w-20 h-20 border border-amber-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
+        <span className="text-amber-900 italic font-serif text-3xl">A</span>
+      </div>
+    </div>
+    <h2 className="text-4xl font-light text-stone-900 mb-8 italic font-serif leading-snug">
+      "We don't just manufacture artifacts; <br/> we preserve a generational lineage of metal-smithing."
+    </h2>
+    <p className="text-stone-500 text-sm tracking-[0.3em] uppercase font-bold mb-4">The Artisan Pledge</p>
+    <p className="text-stone-400 max-w-2xl mx-auto leading-relaxed font-sans text-sm">
+      By partnering with Aethel Crafts, you support over 50 artisan families in the Faridabad and Greater Delhi region. We provide fair-wage employment, safe industrial workshops, and ensure traditional techniques are passed down to the next generation.
+    </p>
+  </div>
+</section>
+
+{/* --- GLOBAL PRESENCE --- */}
+<section className="py-24 bg-stone-900 overflow-hidden relative">
+  <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-stone-900 to-transparent z-10" />
+  <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-stone-900 to-transparent z-10" />
+  
+  <div className="flex gap-20 items-center animate-marquee whitespace-nowrap">
+    {[
+      "Boutique Resorts in Tuscany",
+      "Corporate Headquarters in Dubai",
+      "Retail Galleries in London",
+      "Luxury Condos in Mumbai",
+      "Heritage Hotels in Rajasthan",
+      "Design Studios in New York"
+    ].map((text, i) => (
+      <div key={i} className="flex items-center gap-6">
+        <span className="text-amber-500 text-2xl">✦</span>
+        <span className="text-white/40 text-[10px] font-black tracking-[0.5em] uppercase italic font-serif">
+          {text}
+        </span>
+      </div>
+    ))}
+    {/* Duplicate for seamless loop */}
+    {[
+      "Boutique Resorts in Tuscany",
+      "Corporate Headquarters in Dubai",
+      "Retail Galleries in London",
+    ].map((text, i) => (
+      <div key={`dup-${i}`} className="flex items-center gap-6">
+        <span className="text-amber-500 text-2xl">✦</span>
+        <span className="text-white/40 text-[10px] font-black tracking-[0.5em] uppercase italic font-serif">
+          {text}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
+{/* CSS for Marquee (Add to your global CSS or a style tag) */}
+<style jsx>{`
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    animation: marquee 40s linear infinite;
+  }
+`}</style>
+      
 
       {/* --- CONTACT FORM --- */}
       <section
@@ -414,7 +481,7 @@ export default function Home() {
 
       {/* --- WHATSAPP FLOAT --- */}
       <a
-        href="https://wa.me/917033826056"
+        href="https://wa.me/917258895429"
         className="fixed bottom-8 right-8 bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -425,13 +492,13 @@ export default function Home() {
       {/* --- MOBILE CTA BAR --- */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 p-3 flex gap-3 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
         <a
-          href="tel:7033826056"
+          href="tel:7258895429"
           className="flex-1 bg-stone-900 text-white text-center py-4 font-sans font-bold text-xs uppercase tracking-widest"
         >
           Call
         </a>
         <a
-          href="https://wa.me/917033826056"
+          href="https://wa.me/917258895429"
           className="flex-1 bg-amber-900 text-white text-center py-4 font-sans font-bold text-xs uppercase tracking-widest"
         >
           WhatsApp
