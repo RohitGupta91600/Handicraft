@@ -217,7 +217,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <img
-              src="/images/creativity.jpg"
+              src="/images/craft1.jpg"
               alt="Crafting"
               className="w-full h-[400px]  shadow-2xl"
             />
